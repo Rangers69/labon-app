@@ -27,9 +27,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/pembayaran', \App\Http\Livewire\Pembayaran::class);
 });
 
-Route::middleware(['karyawan'])->middleware(['admin'])->group(function () {
-    Route::get('/dashboard', \App\Http\Livewire\Dashboard::class);
-});
+// Route::middleware(['admin'])->group(function () {
+// });
+Route::get('/dashboard', \App\Http\Livewire\Dashboard::class);
 
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/karyawan', \App\Http\Livewire\Karyawan::class);
