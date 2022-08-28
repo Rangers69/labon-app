@@ -27,13 +27,13 @@ copy .env.example menjadi .env
 ## Buat database di localhost
 
 ```bash
-nama database : laravel_8_laundry
+nama database : terserah aja
 ```
 
 ## Setting database di .env
 
 ```bash
-DB_DATABASE=laravel_8_laundry
+DB_DATABASE= sesuaikan dengan yang dilokal
 ```
 
 ## Generate key
@@ -53,9 +53,3 @@ php artisan migrate --seed
 ```bash
 php artisan serve
 ```
-
-tes
-tes
-wkwkw
-
-KONTOL
