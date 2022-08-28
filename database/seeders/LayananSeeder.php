@@ -15,27 +15,27 @@ class LayananSeeder extends Seeder
     public function run()
     {
         Layanan::create([
-            'nama' => 'reguler',
-            'durasi' => 48,
-            'harga' => 8000
-        ]);
-
-        Layanan::create([
-            'nama' => 'kilat',
+            'nama' => 'Wash',
             'durasi' => 24,
-            'harga' => 10000
+            'harga' => 35000
         ]);
 
         Layanan::create([
-            'nama' => 'express',
-            'durasi' => 12,
-            'harga' => 15000
+            'nama' => 'Deep Clean',
+            'durasi' => 24,
+            'harga' => 40000
         ]);
 
         Layanan::create([
-            'nama' => 'exclusive',
-            'durasi' => 6,
-            'harga' => 30000
+            'nama' => 'Repair',
+            'durasi' => 24,
+            'harga' => 50000
+        ]);
+
+        Layanan::create([
+            'nama' => 'Repaint',
+            'durasi' => 24,
+            'harga' => 60000
         ]);
     }
 }
