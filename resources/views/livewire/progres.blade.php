@@ -58,11 +58,11 @@
                             @if ($item->status == 0)
                             <span class="badge badge-secondary">Sudah Dibayar</span>
                             @elseif ($item->status == 1)
-                            <span class="badge badge-dark">Waiting</span>
+                            <span class="badge badge-dark">Jemput Barang</span>
                             @elseif ($item->status == 2)
                             <span class="badge badge-primary">Proses Pencucian</span>
                             @elseif ($item->status == 3)
-                            <span class="badge badge-info">Selesai</span>
+                            <span class="badge badge-info">Selesai dicuci</span>
                             @elseif ($item->status == 4)
                             <span class="badge badge-info">telah diambil</span>
                             @elseif ($item->status == 5)
@@ -77,7 +77,7 @@
 
                             @else
                             @if ($item->status == 0)
-                            <button wire:click="aksi({{ $item->id }})" type="button" class="btn btn-sm btn-dark mr-2">Waiting</button>
+                            <button wire:click="aksi({{ $item->id }})" type="button" class="btn btn-sm btn-dark mr-2">Jemput Barang</button>
                             @elseif ($item->status == 1)
                             <button wire:click="aksi({{ $item->id }})" type="button" class="btn btn-sm btn-primary mr-2">Proses Pencucian</button>
                             @elseif ($item->status == 2)
