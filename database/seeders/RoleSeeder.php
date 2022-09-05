@@ -25,6 +25,7 @@ class RoleSeeder extends Seeder
         User::create([
             'name' => 'admin',
             'email' => 'admin@gmail.com',
+            'email_verified_at' => now(),
             'password' => bcrypt('123123123'),
             'role_id' => $role->id
         ]);

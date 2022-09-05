@@ -16,11 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', WelcomeController::class);
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/layanan', \App\Http\Livewire\Layanan::class);
     Route::get('/transaksi', \App\Http\Livewire\Transaksi::class);
     Route::get('/progres', \App\Http\Livewire\Progres::class);
