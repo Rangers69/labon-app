@@ -36,7 +36,7 @@
                         <th scope="col">Total Bayar</th>
                         <th scope="col">Layanan</th>
                         <th scope="col">Tanggal Diterima</th>
-                        <th scope="col">Tanggal Diambil</th>
+                        <th scope="col">Tanggal Penyelesaian</th>
                         <th scope="col">Status</th>
                         @if(auth()->user()->role_id == '3')
 
