@@ -63,8 +63,8 @@
                                         <th scope="col">Nama</th>
                                         <th scope="col">Total Bayar</th>
                                         <th scope="col">Layanan</th>
-                                        <th scope="col">Tanggal Diterima</th>
-                                        <th scope="col">Tanggal Diambil</th>
+                                        <th scope="col">Tanggal Transaksi</th>
+                                        <th scope="col">Tanggal Penyelesaian</th>
                                     </tr>
                                 </thead>
                                 <tbody>
