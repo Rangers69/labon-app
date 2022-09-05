@@ -51,5 +51,5 @@ php artisan migrate --seed
 ## Jalankan Serve
 
 ```bash
-php artisan serve
+php artisan serve "ok"
 ```
